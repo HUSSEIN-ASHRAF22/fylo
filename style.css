@@ -1,0 +1,754 @@
+/* ------------------ !Imports ----------------------- */
+@font-face {
+    font-family: Raleway;
+    src: url(/Raleway-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(/Raleway-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+/* ------------------ !Reset ----------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------ !Global ----------------------- */
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --Font-size-paragraph: 16px;
+}
+/* ------------------ !Body Content ----------------------- */
+
+body{
+    font-family: Raleway, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+header .logo{
+    width: 100px;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-transform: capitalize;
+}
+header a{
+    color: #000;
+    font-size: var(--Font-size-paragraph);
+    font-weight: 600;
+    margin-left: 20px;
+}
+/* --End the header-- */
+.features{
+    padding: 20px 40px;
+    margin: 80px auto;
+    font-family: "Open Sans";
+}
+.features .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.features .text{
+    max-width: 500px;
+    line-height: 1.5;
+}
+.features h1{
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.features p{
+    color: #000;
+    font-size: var(--Font-size-paragraph);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.features input{
+    width: 250px;
+    padding: 10px 10px;
+    border: 1px solid #0000004c;
+    border-radius: 3px;
+    margin-right: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+}
+.features button{
+    background-color: var(--Bright-Blue);
+    color: #fff;
+    padding: 10px 40px;
+    border: 1px solid #0000004c;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+}
+.features .image{
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+}
+/* --   end features section */
+.teams{
+    background-color: var(--Light-Grayish-Blue);
+    padding: 20px 40px;
+    margin: 80px auto;
+}
+.teams .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.teams .text{
+    max-width: 530px;
+    line-height: 1.5;
+}
+.teams h2{
+    color: #000;
+    font-size: 32px;
+    margin: 50px 0 20px 0;
+}
+.teams p{
+    color: #000;
+    font-size: var(--Font-size-paragraph);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.teams .image{
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.teams a{
+    color: var(--Moderate-Cyan);
+    border-bottom: 2px solid var(--Moderate-Cyan);
+}
+.teams a i{
+    background-color: var(--Moderate-Cyan);
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.teams .box{
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+    margin: 30px 0;
+    padding: 20px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    line-height: 1.5;
+}
+.box i{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.box .user-profile{
+    display: flex;
+    gap: 10px;
+}
+.box .user-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box .user-profile .text p{
+    font-size: var(--Font-size-paragraph);
+    font-weight: 500;
+}
+/* -- End team section */
+.sign-in{
+    background-color: var(--Desaturated-Blue);
+    color: #fff;
+    padding: 20px 40px;
+    margin: 80px auto 0 auto;
+}
+.sign-in .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.sign-in .text {
+    max-width: 450px;
+    line-height: 1.5;
+}
+.sign-in h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sign-in p{
+    font-size: var(--Font-size-paragraph);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.sign-in .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sign-in input{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid var(--Bright-Blue);
+    border-radius: 3px;
+    margin-right: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+}
+.sign-in button{
+    width: 250px;
+    background-color: var(--Bright-Blue);
+    color: #fff;
+    font-size: var(--Font-size-paragraph);
+    padding: 10px 30px;
+    border: 1px solid var(--Bright-Blue);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+}
+/* --   end sign-in section */
+footer{
+    background-color: var(--Very-Dark-Blue);
+    margin: 0;
+    padding: 20px 40px;
+    display: flex;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+}
+footer .contact{
+    margin: 60px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+footer p{
+    font-size: var(--Font-size-paragraph);
+    font-weight: 400;   
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .links a{
+    color: #fff;
+    font-size: var(--Font-size-paragraph);
+}
+footer .links-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .links-2 a{
+    color: #fff;
+    font-size: var(--Font-size-paragraph);
+}
+footer .social-media{
+    display: flex;
+    gap: 20px;
+}
+footer .social-media a{
+    color: #fff;
+    font-size: 24px;
+}
+/* ------------------ !Media Query ----------------------- */
+
+@media(max-width: 375px) {
+    header{
+        padding: 15px;
+    }
+    header .logo{
+        width: 70px;
+        height: auto;
+    }
+    header ul{
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+    header ul li a{
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0;
+        padding: 5px;
+    }
+    .features{
+        padding: 10px 30px;
+        margin: 30px auto;
+    }
+    .features .container{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .features .text{
+        order: 2;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .features h1{
+        font-size: 24px;
+        margin: 0 auto 16px auto;
+    }
+    .features p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .features input{
+        width: 300px;
+        margin: 0 auto 16px auto;
+    }
+    .features button{
+        width: 300px;
+        margin: 0 auto 16px auto;
+    }
+    .features img{
+        order: 1;
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .teams{
+        padding: 10px 30px;
+        margin: 30px auto 0 auto;
+    }
+    .teams .container{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .teams .text{
+        order: 2;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .teams h2{
+        text-align: center;
+        font-size: 18px;
+        margin: 0 auto 16px auto;
+    }
+    .teams p{
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    .teams .image{
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .teams .box{
+        text-align: left;
+    }
+    .sign-in{
+        padding: 10px 30px;
+        margin: 0 auto 0 auto;
+    }
+    .sign-in .container{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .sign-in .container .text{
+        margin-top: 20px;
+        max-width: 300px;
+    }
+    .sign-in h4{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .sign-in p{
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .sign-in .form{
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    .sign-in input{
+        width: 250px;
+    }
+    .sign-in button{
+        width: 250px;
+    }
+    footer .container{
+        text-align: left;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    footer .links{
+        margin-bottom: 20px;
+    }
+    footer .links-2{
+        margin-bottom: 20px;
+    }
+}
+/* ------------------------- */
+@media (min-width:375px) and (max-width:767px){
+    header{
+        padding: 25px;
+    }
+    header .logo{
+        max-width: 100px;
+        width: 70px;
+        height: auto;
+    }
+    header ul{
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+    header ul li a{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        padding: 5px;
+    }
+    .features{
+    padding: 10px 30px;
+    margin: 30px auto;
+}
+.features .container{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.features .text{
+    order: 2;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.features h1{
+    font-size: 24px;
+    margin: 0 auto 16px auto;
+}
+.features p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.features input{
+    width: 300px;
+    margin: 0 auto 16px auto;
+}
+.features button{
+    width: 300px;
+    margin: 0 auto 16px auto;
+}
+.features img{
+    order: 1;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+    .teams{
+        padding: 10px 30px;
+        margin: 30px auto 0 auto;
+    }
+    .teams .container{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .teams .text{
+        order: 2;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .teams h2{
+        text-align: center;
+        font-size: 18px;
+        margin: 0 auto 16px auto;
+    }
+    .teams p{
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    .teams .image{
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .teams .box{
+        text-align: left;
+    }
+    .sign-in{
+        padding: 10px 30px;
+        margin: 0 auto 0 auto;
+    }
+    .sign-in .container{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .sign-in .container .text{
+        margin-top: 20px;
+        max-width: 300px;
+    }
+    .sign-in h4{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .sign-in p{
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .sign-in .form{
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 auto;
+    }
+    .sign-in input{
+        width: 250px;
+    }
+    .sign-in button{
+        width: 250px;
+    }
+    footer .container{
+        text-align: left;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    footer .links{
+        margin-bottom: 20px;
+    }
+    footer .links-2{
+        margin-bottom: 20px;
+    }
+    }
+@media(min-width:768px) and (max-width:1440px){
+    header{
+        padding: 20px 40px;
+    }
+    header .logo{
+        max-width: 100px;
+        height: auto;
+    }
+    header ul{
+        gap: 60px;
+        flex-wrap: nowrap;
+    }
+    header ul li a{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        padding: 5px;
+    }
+    .features{
+    padding: 10px 30px;
+    margin: 30px auto;
+}
+.features .container{
+    gap: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.features .text{
+    max-width: 500px;
+    line-height: 1.5;
+}
+.features h1{
+    font-size: 32px;
+    margin-bottom: 20px
+}
+.features p{
+    font-size: var(--Font-size-paragraph);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.features input{
+    width: 250px;
+    padding: 10px 10px;
+    margin-right: 8px;
+}
+.features button{
+    padding: 10px 40px;
+}
+.features img{
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+}
+    .teams{
+        padding: 20px 40px;
+        margin: 80px auto;
+    }
+    .teams .container{
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    .teams .text{
+        max-width: 530px;
+        line-height: 1.5;
+    }
+    .teams h2{
+        font-size: 32px;
+        margin: 50px 0 20px 0;
+    }
+    .teams p{
+        font-size: var(--Font-size-paragraph);
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .teams .image{
+        width: 400px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .teams .box{
+        max-width: 400px;
+        margin: 30px 0;
+        padding: 20px 40px;
+    }
+    .sign-in{
+        padding: 20px 40px;
+        margin: 80px auto 0 auto;
+    }
+    .sign-in .container{
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    .sign-in .container .text{
+        max-width: 450px;
+        line-height: 1.5;
+    }
+    .sign-in h4{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .sign-in p{
+        font-size: var(--Font-size-paragraph);
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .sign-in .form{
+        gap: 20px;
+    }
+    .sign-in input{
+        width: 400px;
+        padding: 10px;
+        margin-right: 8px;
+    }
+    .sign-in button{
+        width: 250px;
+        padding: 10px 40px;
+    }
+    footer{
+        padding: 20px 40px;
+    }
+    footer .container{
+        gap: 200px;
+    }
+    footer .contact{
+        margin: 60px 0 80px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        footer p{
+            font-size: var(--Font-size-paragraph);
+            font-weight: 400;   
+        }
+        footer .links{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        footer .links a{
+            font-size: var(--Font-size-paragraph);
+        }
+        footer .links-2{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        footer .links-2 a{
+            font-size: var(--Font-size-paragraph);
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1000px) {
+        footer .social-media{
+            display: none;
+        }
+    }
+    @media (min-width:1000px) {
+        footer .social-media{
+            display: block;
+            display: flex;
+            gap: 20px;
+        }
+    }
